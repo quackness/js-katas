@@ -1,10 +1,7 @@
 const conditionalSum = function (values, condition) {
   let sum = 0;
   for (let i = 0; i < values.length; i++) {
-    if ((values[i] % 2 === 0) && (condition === "even")) {
-          sum += values[i]
-    }
-    if ((values[i] % 2 > 0) && (condition === "odd")) {
+    if (((values[i] % 2 === 0) && (condition === "even")) || ((values[i] % 2 > 0) && (condition === "odd"))) {
       sum += values[i]
     }
   }
@@ -20,3 +17,15 @@ console.log(conditionalSum([], "odd"));
 //loop through the array to find the numbers mathcing the condition and module outcome
 //sum them 
 //return the sum 
+
+
+// let sum = 0;
+// for (let i = 0; i < values.length; i++) {
+//   if ((values[i] % 2 === 0) && (condition === "even")) {
+//         sum += values[i]
+//   }
+//   if ((values[i] % 2 > 0) && (condition === "odd")) {
+//     sum += values[i]
+//   }
+// }
+// return sum
