@@ -24,7 +24,7 @@ console.log(conditionalSum([], "odd"));
 //   if ((values[i] % 2 === 0) && (condition === "even")) {
 //         sum += values[i]
 //   }
-//   if ((values[i] % 2 > 0) && (condition === "odd")) {
+//   else if ((values[i] % 2 > 0) && (condition === "odd")) {
 //     sum += values[i]
 //   }
 // }
