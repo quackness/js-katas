@@ -4,8 +4,8 @@
 const numberOfVowels = function (data) {
   let vowelCount = 0;
   let chars = "aeiou"
-  for (let i = 0; i < data.length; i++) {
-    if (chars.includes(data[i])) {
+  for (let i = 0; i < chars.length; i++) {
+    if (data.includes(chars[i])) {
       ++vowelCount
     }
   }
