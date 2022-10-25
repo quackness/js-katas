@@ -6,6 +6,7 @@
 // Our function 
 // must return Polluted if there are too many dirty air samples, or Clean if the proportion of dirty samples is below the threshold.
 
+
 const checkAir = function (sample, threshold) {
   let totalSamples = sample.length;
   let count = 0;
@@ -16,6 +17,7 @@ const checkAir = function (sample, threshold) {
   }
   return (count/sample.length < threshold? "Clean" : "Polluted")
 };
+
 
 console.log(checkAir(
   ['clean', 'clean', 'dirty', 'clean', 'dirty', 'clean', 'clean', 'dirty', 'clean', 'dirty'],
@@ -33,18 +35,26 @@ console.log(checkAir(
 ))
 
 
-// let result = 0;
-//   let divided = null;
-//   let outcome = undefined;
-//   for (let i = 0; i < sample.length; i++) {
-//     if (sample[i] === "dirty") {
-//       result++
-//       divided = result / 10;
-//       if (threshold >= divided) {
-//         outcome = "Clean"
-//       } else {
-//         outcome = "Polluted"
+// const checkAir = function (sample, threshold) {
+//   let result = 0;
+//     let divided = null;
+//     let outcome = undefined;
+//     for (let i = 0; i < sample.length; i++) {
+//       if (sample[i] === "dirty") {
+//         result++
+//         divided = result / sample.length;
+//         if (threshold >= divided) {
+//           outcome = "Clean"
+//         } else {
+//           outcome = "Polluted"
+//         }
 //       }
 //     }
-//   }
-//   return outcome
+//     return outcome
+//   };
+
+
+
+
+
+
