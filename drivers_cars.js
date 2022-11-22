@@ -13,7 +13,8 @@ const drivers = {
 const getCars = function (cars) {
   let arr = [];
   for (let car in cars) {
-    // console.log(cars[car].cars)
+    // console.log("single object", car)
+    // console.log("cars from a single obj", cars[car].cars)
     for (let item of cars[car].cars) {
       // console.log("item", item)
       if (!arr.includes(item)) {
