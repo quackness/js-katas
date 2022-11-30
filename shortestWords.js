@@ -17,5 +17,9 @@ const shortestWordLength = function (sentence) {
   return shortestWord
 }
 
+const shortestWordLengthPart2 = sentence => 
+  Math.min(...sentence.split(" ").map(word => word.length))
+
 
 console.log(shortestWordLength("Hi this is my name")) //2
+console.log(shortestWordLengthPart2("Hi this is my name")) //2
