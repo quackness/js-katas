@@ -9,16 +9,17 @@
 // of values then you should omit the comma.
 
 const repeatNumbers = function (data) {
-  let result = "";
-  for (d = 0; d < data.length; d++) {
-    for (i = 0; i < data[d][1]; i++) {
-      result += data[d][0];
+  let result = " "
+  for (i = 0; i < data.length; i++) {
+    console.log("outter array", data)
+    for (j = 0; j < data[i][1]; j++) {
+      console.log("inner array [i] second element", data[i][1])
+      result += data[i][0]
     }
-    if (d < data.length - 1) {
+    if (i < data.length - 1)
       result += ", "
-    }
   }
-  return result;
+  return result
 };
 
 console.log(repeatNumbers([[1, 10]])); //1111111111
@@ -35,3 +36,4 @@ console.log(
     [92, 2],
   ])
 );//10101010, 343434343434, 9292
+
