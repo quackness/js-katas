@@ -5,20 +5,17 @@
 
 
 const camelCase = function(input) {
-  let result = " ";
-  let string = input.split(" ")
-  string.map(word => console.log(word.charAt(0).toUpperCase() + word.slice(1)))
-  return string.join(" ")
-  // .toUpperCase()
+  const titleCase = input
+  .split(" ")
+  .map(word => {
+    return word.charAt(0).toUpperCase() + word.slice(1)
+  })
+  .join("")
+  // let string = input.split(" ")
+  // string.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+  //     // word.join(" ")
   // return string
-
-
-
-  // for (let i = 0; i < string.length; i++) {
-  //   // string.charAt(0).toUpperCase();
-  //   console.log("log", string)
-  // } 
-  // // return string
+  return titleCase
 };
 
 console.log(camelCase("this is a string"));
