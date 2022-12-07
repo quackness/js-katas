@@ -3,18 +3,24 @@
 //Create a function named camelCase that will convert a string to camel case, 
 //and return the result.
 
-//
-// const camelCase = function(input) {
-//   const titleCase = input
-//   .split(" ")
-//   .map(word => 
-//     word.charAt(0).toUpperCase() + word.slice(1)
-//   )
-//   .join("")
-//   return titleCase
-// };
 
-const camelCase = function(input) {
+const camelCase = function (input) {
+  const titleCase = input
+    .split(" ")
+    .map((word, i) => {
+      console.log(i)
+      if (i !== 0)
+        return word.charAt(0).toUpperCase() + word.slice(1)
+      else {
+        return word
+      }
+    }
+    )
+    .join("")
+  return titleCase
+};
+
+const camelCase2 = function (input) {
   let arr = input.split(" ")
   let result = " "
   for (let i = 0; i < arr.length; i++) {
