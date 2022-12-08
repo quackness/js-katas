@@ -34,10 +34,27 @@ const camelCase2 = function (input) {
   return result
 }
 
-
+const camelCase3 = function (input) {
+  let arr = input.split(" ")
+  let result = " "
+  for (let [i, element] of arr.entries()) {
+    if (i !== 0) {
+      result += arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+    } else {
+      result += arr[i].toLowerCase()
+    }
+  }
+  return result
+}
 
 
 
 console.log(camelCase("this is a string"));
 console.log(camelCase("loopy lighthouse"));
 console.log(camelCase("supercalifragalisticexpialidocious"));
+console.log(camelCase2("this is a string"));
+console.log(camelCase2("loopy lighthouse"));
+console.log(camelCase2("supercalifragalisticexpialidocious"));
+console.log(camelCase3("this is a string"));
+console.log(camelCase3("loopy lighthouse"));
+console.log(camelCase3("supercalifragalisticexpialidocious"));
