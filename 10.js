@@ -22,10 +22,13 @@ const multiplicationTable1 = function(maxValue) {
   var output = [];
   for ( i = 1; i <= maxValue; i++ ) {
     var arr = [];
+    // console.log("first loop", arr)
     for ( j = 1; j <= maxValue; j++ ) {
-      arr.push(i*j);
+      // console.log("multplication", arr.push(i*j));
+      // console.log("arr after multipl", arr)
     }
-    output.push(arr.join(" "));
+    // console.log("join elements", output.push(arr.join(" ")));
+    // console.log("output", output)
   }
   return output.join("\n");
 }
