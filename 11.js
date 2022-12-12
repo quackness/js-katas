@@ -10,7 +10,9 @@ const sphereVolume = function (radius) {
 console.log(4186 < sphereVolume(10) && sphereVolume(10) < 4189);
 
 const coneVolume = function (radius, height) {
-  // And here!
+  let volume = 1/3*PI*Math.pow(radius, 2)*height;
+  console.log(volume)
+  return volume;
 }
 
 console.log(45 < coneVolume(3, 5) && coneVolume(3, 5) < 49);
