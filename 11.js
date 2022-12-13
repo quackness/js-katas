@@ -19,12 +19,24 @@ console.log(45 < coneVolume(3, 5) && coneVolume(3, 5) < 49);
 
 const prismVolume = function (height, width, depth) {
   // Probably here too!
+  let base = width * depth;
+  let volume = height * base;
+  return volume;
 }
 
 console.log(prismVolume(3, 4, 5) === 60);
 
 const totalVolume = function (solids) {
-  // Code here? Yup!
+  let largeSphereVolume=4/3*PI*Math.pow(largeSphere.radius, 3)
+  console.log("lsv", largeSphereVolume)
+  console.log(smallSphere.radius)
+  let smallSphereVolume=4/3*PI*Math.pow(smallSphere.radius, 3)
+  console.log("ssv", smallSphereVolume)
+  let coneVolume = 1/3*PI*Math.pow(cone.radius, 2)*cone.height;
+  console.log("conevolume", coneVolume)
+  console.log(largeSphereVolume + smallSphereVolume + coneVolume)
+  return largeSphereVolume + smallSphereVolume + coneVolume
+
 }
 
 const largeSphere = {
